@@ -12,18 +12,23 @@ const router = createRouter({
 {
     path: '/drama',
   name: 'drama',
-  component: '../views/Drama.vue',
+  component:()=> import('../views/Drama.vue'),
   
 },
 {
   path: '/accion',
   name: 'accion',
-  component: '../views/Accion.vue',
+  component:()=> import('../views/Accion.vue'),
 },
 {
     path: '/comedia',
   name: 'comedia',
-  component: '../views/Comedia.vue',
+  component:()=> import('../views/Comedia.vue'),
+},
+{
+  path: '/infoPeli/:id',
+  name: 'infoPeli',
+  component:()=> import('../views/infoPeli.vue'),
 },
 
 
