@@ -6,7 +6,7 @@ import { idAnimes, getAnimeInfo } from '../assets/scripts/utils';
 let animeData= ref ([])
 
 onMounted (async () => {
-  for( const anime in idAnimes){
+  for( const anime of idAnimes){
     const animeInfo = await getAnimeInfo(anime)
     if (animeInfo.Genre && animeInfo.Genre.includes('Drama')){
         animeData.value.push(animeInfo)

@@ -1,7 +1,7 @@
 <script setup>
 import  MovieCard from '@/components/MovieCard.vue';
 import { onMounted,ref } from 'vue';
-import { idAnimes, getAnimeInfo } from '@/assets/scripts/';
+import { idAnimes, getAnimeInfo } from '@/assets/scripts/utils';
 
 const animeData = ref ([])
 
@@ -11,8 +11,6 @@ onMounted (async () => {
     }
     
 })
-
-
 
 </script>
 <template>

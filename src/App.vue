@@ -64,7 +64,7 @@ nav a:hover{
   display: flex;
   flex-direction: column;
 }
-.contennido{
+.contenido{
   flex: 1;
 }
 

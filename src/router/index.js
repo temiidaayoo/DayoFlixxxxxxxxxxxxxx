@@ -7,7 +7,7 @@ const router = createRouter({
 {
   path: '/',
   name: 'home',
-  component: '../views/Home.vue',
+  component:()=> import('../views/Home.vue'),
 },
 {
     path: '/drama',
@@ -29,6 +29,7 @@ const router = createRouter({
   path: '/infoPeli/:id',
   name: 'infoPeli',
   component:()=> import('../views/infoPeli.vue'),
+  props:true,
 },
 
 

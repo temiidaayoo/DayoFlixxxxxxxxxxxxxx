@@ -1,4 +1,4 @@
-<script>
+<script setup>
 
 import { ref, onMounted } from 'vue';
 import { getAnimeInfo } from '@/script/utils';
@@ -78,6 +78,7 @@ import { getAnimeInfo } from '@/script/utils';
 .details {
   flex: 1;
   min-width: 300px;
+  color: white;
 }
 
 .details h1 {
